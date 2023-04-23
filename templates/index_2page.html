@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head  style="scroll-behavior: smooth;">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content='Word, Excel, графика, программирование для детей и взрослых;ОГЭ;EГЭ;
+    Разностороннее обучение для детей различных возрастов и взрослых;Грамматика без зубрежки;
+    Отвлечем ребенка от гаджетов и откроем дверь в мир знаний и творчества;
+    Курсы иностранных языков для детей/взрослых'>
+    <title>Образовательный центр Интелlekt_club</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+          crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#67a1a1;display:flex;height: 100px;">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="/static/img/logo.png" style="height: 100px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" style="font-size:20px" aria-current="page" href="/">Главная страница</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" style="font-size:20px" href="/registration_for_the_course">Запись на курс</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" style="font-size:20px" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Основные сведения
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/information_about_the_organization">Об организации</a></li>
+                        <li><a class="dropdown-item" href="#">О преподавателях</a></li>
+                        <li><a class="dropdown-item" href="/documents">Документы</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+    <script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1/dist/es-module-shims.min.js" crossorigin="anonymous"></script>
+    <script type="importmap">
+    {
+      "imports": {
+        "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/esm/popper.min.js",
+        "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.esm.min.js"
+      }
+    }
+    </script>
+    <script type="module">
+      import * as bootstrap from 'bootstrap'
+
+      new bootstrap.Popover(document.getElementById('popoverButton'))
+    </script>
+
+    <h3 style="width:300px;margin-left:110px;font-size:40px; color:#646566;margin-top:50px;">Запись на курс</h3>
+    <div class="container" style="margin-left:100px;width:70%;margin-top:25px;">
+        <form action="" method="post">
+            <div class="input-group mb-3">
+              <span class="input-group-text" style="width:150px" id="basic-addon1">ФИО</span>
+              <input type="text" class="form-control" placeholder="Лавров Дмитрий Павлович" name="Username" id="Username" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" style="width:150px" id="basic-addon3">Номер телефона</span>
+              <input type="text" class="form-control" name="number_phone" id="number_phone" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" style="width:150px" id="basic-addon4">Возраст</span>
+              <input type="text" class="form-control" name="age" id="age" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3" >
+              <label class="input-group-text" style="width:150px" for="course">Курс</label>
+              <select class="form-select"  name="course" id="course">
+                <option value="1">Подготовка к ОГЭ по информатике</option>
+                <option value="2">Компьютерная грамотность</option>
+                <option value="3">Подготовка к ЕГЭ по информатике</option>
+                <option value="4">Офисные технологии</option>
+                <option value="5">История, обществознание</option>
+                <option value="6">Ментальная арифметика</option>
+                <option value="7">Перейди с математикой на Ты</option>
+                <option value="8">Подготовка к ЕГЭ и ОГЭ по математике</option>
+                <option value="9">Подготовка к школе</option>
+                <option value="10">Скорочтение</option>
+                <option value="11">Английский язык</option>
+                <option value="12">Русский язык, литература</option>
+              </select>
+            </div>
+            <button type="submit" onclick="alert('Заявка отправлена!')" style="background-color:#67a1a1;color:#ffffff;margin-top:25px" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal12">
+                Записаться на курс
+            </button>
+        </form>
+    </div>
+    <img src="static/img/background.png" style="position: absolute;height: 400px;width:100%;margin-top:50px" alt="">
+    <h3 style="width:300px;margin-left:80px;font-size:30px; color:#646566;margin-top:50px; position: relative;">Контакты</h3>
+    <h3 style="width:600px;margin-left:80px;font-size:20px; color:#9b9a99;margin-top:20px; position: relative;">Контактный телефон: +7-913-490-89-03 (администратор)</h3>
+    <h3 style="width:300px;margin-left:80px;font-size:30px; color:#646566;margin-top:50px; position: relative;">Время работы</h3>
+    <h3 style="width:600px;margin-left:80px;font-size:20px; color:#9b9a99;margin-top:20px; position: relative;">Будние дни: 16:00-20:00</h3>
+    <h3 style="width:600px;margin-left:80px;font-size:20px; color:#9b9a99;margin-top:10px; position: relative;">Выходные дни: 11:00-20:00</h3>
+    <h3 style="width:300px;margin-left:80px;font-size:30px; color:#646566;margin-top:50px; position: relative;">Адрес</h3>
+    <h3 style="width:600px;margin-left:80px;font-size:20px; color:#9b9a99;margin-top:20px; position: relative;">Норильск, Талнахская, 66 — 143 офис; 1 этаж.</h3>
+</body>
+</html>
